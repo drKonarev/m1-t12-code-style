@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class depositCalculator {
 
-    double calculateComplexPercent(double a, double y, int d) {
+    double calculateComplexPercent(double a, double y, int d) { // Переменные из одного символа запутают. Лучше словом.
         double pay = a * Math.pow((1 + y / 12), 12 * d);
         return summ(pay, 2);
     }
@@ -26,7 +26,7 @@ public class depositCalculator {
         int amount = scanner.nextInt();
         System.out.println("Введите срок вклада в годах:");
         period = scanner.nextInt();
-        System.out.println("Выберите тип вклада, " +
+        System.out.println("Выберите тип вклада, " + // Круто что по строкам разнесено, так все быстро и легко читается.
                 "1 - вклад с обычным процентом, " +
                 "2 - вклад с капитализацией:");
         action = scanner.nextInt();
